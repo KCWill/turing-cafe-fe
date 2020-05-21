@@ -1,0 +1,12 @@
+.reservation-card {
+    display: flex;
+    color: teal;
+    background-color: white;
+    border: 5px solid teal;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}

@@ -4,12 +4,12 @@ import './ReservationCard.css';
 
 const ReservationCard = (props) => {
     return (
-        <>
+        <section className='reservation-card'>
             <h2>{`${props.data.name}`}</h2>
-            <h3>{`${props.data.date}`}</h3>
-            <h3>{`${props.data.time} pm`}</h3>
-            <h3>{`Number of guests: ${props.data.number}`}</h3>
-        </>
+            <p>{`${props.data.date}`}</p>
+            <p>{`${props.data.time} pm`}</p>
+            <p>{`Number of guests: ${props.data.number}`}</p>
+        </section>
     )
 }
 
