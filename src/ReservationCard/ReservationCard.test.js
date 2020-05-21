@@ -20,5 +20,6 @@ describe('Reservation Card', () => {
         expect(getByText('(03/05)')).toBeInTheDocument();
         expect(getByText('7:00 pm')).toBeInTheDocument();
         expect(getByText('Number of guests: 6')).toBeInTheDocument();
+        
     })
 })

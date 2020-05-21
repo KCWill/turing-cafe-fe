@@ -24,7 +24,6 @@ describe('Form', () => {
         fireEvent.change(getByPlaceholderText('Date (mm/dd)'), {target: {value: '(03/05)'}});
         fireEvent.change(getByPlaceholderText('Time'), {target: {value: '7:00'}});
         fireEvent.change(getByPlaceholderText('Number of guests'), {target: {value: 4}});
-        
         expect(getByTestId('reservation-form')).toHaveFormValues({
             name: 'Jimmy',
             date: '(03/05)',

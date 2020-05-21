@@ -5,7 +5,10 @@ class Form extends Component {
     constructor(){
         super();
         this.state = {
-
+            name: '',
+            date: '',
+            time: '',
+            number: 0,
         }
     }
 
@@ -20,7 +23,12 @@ class Form extends Component {
     }
 
     clearInputs = () => {
-        this.setState({})
+        this.setState({
+            name: '',
+            date: '',
+            time: '',
+            number: 0,
+        })
     }
 
     render() {
