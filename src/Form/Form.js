@@ -25,7 +25,7 @@ class Form extends Component {
 
     render() {
         return (
-            <form>
+            <form data-testid='reservation-form'>
                 <input placeholder='Name' value={this.state.name} onChange={this.handleChange} name='name'/>
                 <input placeholder='Date (mm/dd)' value={this.state.date} onChange={this.handleChange} name='date'/>
                 <input placeholder='Time' value={this.state.time} onChange={this.handleChange} name='time'/>
