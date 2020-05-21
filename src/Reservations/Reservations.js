@@ -1,11 +1,14 @@
 import React from 'react';
 import './Reservations.css';
+import ReservationCard from '../ReservationCard/ReservationCard';
 
 
-const Reservations = () => {
+const Reservations = (props) => {
     return (
         <>
-            <h2>Testing</h2>
+            {props.reservations.map(reservation => {
+                return <ReservationCard data={reservation} />
+            })}
         </>
     )
 }
