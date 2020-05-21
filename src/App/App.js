@@ -12,9 +12,9 @@ class App extends Component {
   }
 
   submitReservation = (resyData) => {
-    const resyCopy = [...this.state.reservations];
-    resyCopy.push(resyData);
-    this.setState({...this.state, reservations: resyCopy})
+    // const resyCopy = [...this.state.reservations];
+    // resyCopy.push(resyData);
+    this.setState({reservations: [...this.state.reservations, resyData]})
   }
 
   componentDidMount = async () => {
