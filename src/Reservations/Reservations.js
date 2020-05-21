@@ -6,8 +6,8 @@ import ReservationCard from '../ReservationCard/ReservationCard';
 const Reservations = (props) => {
     return (
         <>
-            {props.reservations.map(reservation => {
-                return <ReservationCard data={reservation} />
+            {props.reservations.map((reservation, index) => {
+                return <ReservationCard data={reservation} key={index} />
             })}
         </>
     )
