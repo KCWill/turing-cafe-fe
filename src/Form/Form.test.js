@@ -15,5 +15,5 @@ describe('Form', () => {
         expect(getByPlaceholderText('Number of guests')).toBeInTheDocument();
         expect(getByText('Make Reservation')).toBeInTheDocument();
     })
-    
+     
 })
